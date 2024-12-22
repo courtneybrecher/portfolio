@@ -2,8 +2,8 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Use a professional font like Roboto */
-    background: #E6E6FA; /* Light purple background */
+    font-family: 'Open Sans', sans-serif; /* Use a simplistic font like Open Sans */
+    background: #E8E8F8; /* Muted purple background */
     color: #333;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #9370DB; /* Slightly darker purple background */
+    background-color: #6A5ACD; /* Slightly darker purple background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #7B68EE; /* Darker hover effect */
+    background-color: #483D8B; /* Darker hover effect */
     border-radius: 5px;
 }
 
@@ -60,8 +60,14 @@ main {
     margin: 20px auto;
     background-color: #fff;
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 1200px; /* Increased max-width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project {
@@ -69,7 +75,8 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px;
+    flex: 1;
+    min-width: 300px; /* Minimum width to ensure responsiveness */
 }
 
 .project h3 {
@@ -79,7 +86,7 @@ main {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #9370DB; /* Slightly darker purple background */
+    background-color: #6A5ACD; /* Slightly darker purple background */
     color: #fff;
 }
 
