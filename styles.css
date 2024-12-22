@@ -1,9 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+/* Ensure the entire HTML and body take up full height */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     background: linear-gradient(to right, #6dd5ed, #2193b0); /* Gradient blue background */
     color: #333;
+}
+
+/* Create a flex container for the body */
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -45,7 +52,9 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-section {
+/* Main content area should take up available space */
+main {
+    flex: 1;
     padding: 20px;
     margin: 20px auto;
     background-color: #fff;
@@ -63,9 +72,6 @@ footer {
     padding: 10px 0;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Hide all tab content by default */
