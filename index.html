@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courtney Brecher</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Include AOS (Animate on Scroll) library for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
-        <h1>Courtney Brecher</h1>
+        <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about" onclick="showTab(event, 'about')">About Me</a></li>
@@ -19,82 +21,41 @@
     </header>
 
     <main>
-        <section id="about" class="tab-content">
+        <section id="about" class="tab-content" data-aos="fade-up">
             <h2>About Me</h2>
-            <img src="IMG_6500.JPG" alt="Headshot">
-            <p>
-                Hi! My name is Courtney I'm from New York, and I'm currently a sophomore at Cornell University in the College of Engineering class of 2027. 
-                I'm majoring in computer science with a minor in information science, concentrating in UX design. Throughout my time at Cornell, 
-                I hope to build upon my technical skills regarding programming and design skills as well as develop a strong set of professional skills.
-                In future projects, I hope to use my skillset to directly benefit my community. I am a team-oriented worker and look forward to 
-                collaborating with other engineers to build meaningful projects. If you are interested in my work feel free to explore my 
-                portfolio and reach out to me! cpb93@cornell.edu
-            </p>
+            <p>Hello! I am a sophomore at Cornell University, passionate about software development. Here you can find some of my projects.</p>
         </section>
 
-        <section id="projects" class="tab-content" style="display:none;">
+        <section id="projects" class="tab-content" style="display:none;" data-aos="fade-up">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Interactive image selection</h3>
-                <p>
-                    
-                </p>
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
             </div>
             <div class="project">
-                <h3>Cloudvirga dashboard design</h3>
-                <p>
-                    Last summer, I interned as a UX designer at Cloudvirga, a fintech startup 
-                    focused on simplifying the home loan and credit card application processes. 
-                    One of my key projects involved collaborating with the design team to redesign 
-                    Cloudvirga’s platform, aligning it with the company’s updated branding, values, 
-                    and mission. A primary goal of the redesign was to encourage users to complete 
-                    their home loan applications. I played an integral role in every stage of the 
-                    design process, from participating in regular design reviews to revising Figma 
-                    files to improve the user interface. I also ensured the site met ADA compliance 
-                    standards, creating a more inclusive experience for all users.
-                </p>
-            </div>
-            <div class="project">
-                <h3>Spotify Case Study</h3>
-                <p>
-                    Created a new feature for Spotify by using the Double Diamond Framework in
-                    order to build a design to promote community building with a clear user
-                    interface using Figma. Participated in a critique group to peer review student products and provide feedback.
-                </p>
-                <a href="https://medium.com/@cpb93/spotify-concept-connecting-people-through-music-b64272a9cbc7" target="_blank">View my project</a>
-            </div>
-            <div class="project">
-                <h3>Connect-N</h3>
-                <p>
-                    Collaborated with a partner to develop a dynamic version of Connect 4 with any number of rows and columns. 
-                    Gained experienced with using both 1-dimensional and 2-dimensional data, structuring code with 
-                    inheritance and subclasses, and writing code for simple artificial intelligence.
-                </p>
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
                 <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
             </div>
             <!-- Add more projects as needed -->
-            <div class="project">
-                <h3>ConnectionsInSight</h3>
-                <p>
-                    Self-coded my own website to raise awareness about challenges for the 
-                    vision-impaired. Curated resources about clinical trials and medical advances to 
-                    improve congenital and inherited vision impairments. Publicized my website through the 
-                    medical community and social media.
-                </p>
-                <a href="https://connectionsinsight.glitch.me/index.html" target="_blank">ConnectionsInSight</a>
-            </div>
         </section>
 
-        <section id="contact" class="tab-content" style="display:none;">
+        <section id="contact" class="tab-content" style="display:none;" data-aos="fade-up">
             <h2>Contact</h2>
-            <p>If you would like to get in touch, please email me at <a href="cpb93@cornell.edu">cpb93@cornell.edu</a>.</p>
+            <p>If you would like to get in touch, please email me at <a href="mailto:example@cornell.edu">example@cornell.edu</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Courtney Brecher <a href="cpb93@cornell.edu">cpb93@cornell.edu</a></p>
+        <p>© 2024 Your Name</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Initialize AOS library
+        AOS.init();
+    </script>
 </body>
 </html>
