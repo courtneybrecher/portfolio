@@ -14,7 +14,7 @@ body {
 }
 
 img {
-    width: 100%; /* Resize image to fit the container */
+    width: 40%; /* Resize image to fit the container */
     height: auto; /* Maintain the aspect ratio */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
