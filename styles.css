@@ -5,6 +5,7 @@ html, body {
     font-family: 'Open Sans', sans-serif; /* Use a simplistic font like Open Sans */
     background: #E8E8F8; /* Muted purple background */
     color: #333;
+    font-size: 1.5em;
 }
 
 /* Create a flex container for the body */
