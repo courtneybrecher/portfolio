@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Georgia', serif; /* Use a Times New Roman-like font */
-    font-size: 18px; /* Increase font size */
+    font-size: 20px; /* Increase font size */
     background: #2C2C34; /* Darker background */
     color: #E8E8E8; /* Light text color */
 }
@@ -24,7 +24,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.8em;
+    font-size: 3em; /* Increase font size */
     font-weight: 700;
 }
 
@@ -44,7 +44,7 @@ nav ul li {
 nav ul li a {
     color: #E8E8E8;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increase font size */
     padding: 10px 20px;
     transition: background-color 0.3s, border-radius 0.3s;
 }
@@ -91,10 +91,13 @@ main {
     padding: 20px;
     flex: 1;
     min-width: 300px; /* Minimum width to ensure responsiveness */
+    max-width: 48%; /* Ensure each project takes up the same space */
+    box-sizing: border-box;
 }
 
 .project h3 {
     margin-top: 0;
+    font-size: 1.5em;
 }
 
 .project-media {
