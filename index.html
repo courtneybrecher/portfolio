@@ -10,105 +10,70 @@
 </head>
 <body>
     <header>
-        <h1>Courtney Brecher</h1>
+        <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about" onclick="showTab(event, 'about')">About Me</a></li>
                 <li><a href="#projects" onclick="showTab(event, 'projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showTab(event, 'contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="about" class="tab-content" data-aos="fade-up">
-            <img src="IMG_6500.JPG" alt="Headshot" />
             <h2>About Me</h2>
-            <p>
-                Hi! My name is Courtney I'm from New York, and I'm currently a sophomore at 
-                Cornell University in the College of Engineering class of 2027. I'm majoring in 
-                computer science with a minor in information science, concentrating in UX design. 
-                Throughout my time at Cornell, I hope to build upon my technical skills regarding 
-                programming and design skills as well as develop a strong set of professional skills.
-                In future projects, I hope to use my skillset to directly benefit my community. 
-                I am a team-oriented worker and look forward to collaborating with other engineers
-                to build meaningful projects. If you are interested in my work feel free to explore
-                my portfolio and reach out to me! cpb93@cornell.edu
-            </p>
+            <div class="about-container">
+                <img src="your-photo.jpg" alt="Courtney's Photo" class="profile-photo">
+                <p>Hi! My name is Courtney. I'm from New York, and I'm currently a sophomore at Cornell University in the College of Engineering class of 2027. I'm majoring in computer science with a minor in information science, concentrating in UX design. Throughout my time at Cornell, I hope to build upon my technical skills regarding programming and design skills as well as develop a strong set of professional skills. In future projects, I hope to use my skillset to directly benefit my community. I am a team-oriented worker and look forward to collaborating with other engineers to build meaningful projects. If you are interested in my work, feel free to explore my portfolio and reach out to me at cpb93@cornell.edu.</p>
+            </div>
         </section>
 
-<section id="projects" class="tab-content" style="display:none;">
-    
+        <section id="projects" class="tab-content" style="display:none;" data-aos="fade-up">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Interactive image selection</h3>
-                <p>
-                    This project focused on implementing and optimizing the Intelligent Scissors
-                    algorithm for interactive image segmentation, allowing users to select and trace 
-                    paths that follow image edges for precise selections. I implemented Dijkstra’s 
-                    algorithm to find the shortest paths in a weighted graph, adapting it for incremental 
-                    updates to visualize the selection process dynamically. This approach enabled real-time 
-                    feedback, allowing users to adjust paths and control points interactively.
-                    
-                    The final tool seamlessly combines edge-following and straight-line path options, 
-                    offering flexibility and high accuracy in selections. With background processing 
-                    and real-time updates, the tool maintained a smooth, responsive user experience. 
-                    The project highlighted advanced algorithm design, data structure optimization, 
-                    and real-time system performance.
-                </p>
-            </div>
-            <div class="project">
-                <h3>Cloudvirga dashboard design</h3>
-                 <img src="dash.pjpeg" alt="Dashboard design" />
-                 <img src="openDash.pjpeg" alt="Dashboard design" />
-                 <img src="doc.jpeg" alt="Document screen" />
-                <p>
-                    Last summer, I interned as a UX designer at Cloudvirga, a fintech startup 
-                    focused on simplifying the home loan and credit card application processes. 
-                    One of my key projects involved collaborating with the design team to redesign 
-                    Cloudvirga’s platform, aligning it with the company’s updated branding, values, 
-                    and mission. A primary goal of the redesign was to encourage users to complete 
-                    their home loan applications. I played an integral role in every stage of the 
-                    design process, from participating in regular design reviews to revising Figma 
-                    files to improve the user interface. I also ensured the site met ADA compliance 
-                    standards, creating a more inclusive experience for all users.
-                </p>
-            </div>
-            <div class="project">
-                <h3>Spotify Case Study</h3>
-                <p>
-                    Created a new feature for Spotify by using the Double Diamond Framework in
-                    order to build a design to promote community building with a clear user
-                    interface using Figma. Participated in a critique group to peer review student products and provide feedback.
-                </p>
-                <a href="https://medium.com/@cpb93/spotify-concept-connecting-people-through-music-b64272a9cbc7" target="_blank">View my project</a>
-            </div>
-            <div class="project">
-                <h3>Connect-N</h3>
-                <p>
-                    Collaborated with a partner to develop a dynamic version of Connect 4 with any number of rows and columns. 
-                    Gained experienced with using both 1-dimensional and 2-dimensional data, structuring code with 
-                    inheritance and subclasses, and writing code for simple artificial intelligence.
-                </p>
-                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-            </div>
-            <!-- Add more projects as needed -->
-            <div class="project">
-                <h3>ConnectionsInSight</h3>
-                <p>
-                    Self-coded my own website to raise awareness about challenges for the 
-                    vision-impaired. Curated resources about clinical trials and medical advances to 
-                    improve congenital and inherited vision impairments. Publicized my website through the 
-                    medical community and social media.
-                </p>
-                <a href="https://connectionsinsight.glitch.me/index.html" target="_blank">ConnectionsInSight</a>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Interactive Image Selection</h3>
+                    <video controls>
+                        <source src="interactive-image-selection.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>This project focused on implementing and optimizing the Intelligent Scissors algorithm for interactive image segmentation, allowing users to select and trace paths that follow image edges for precise selections. I implemented Dijkstra’s algorithm to find the shortest paths in a weighted graph, adapting it for incremental updates to visualize the selection process dynamically. This approach enabled real-time feedback, allowing users to adjust paths and control points interactively. The final tool seamlessly combines edge-following and straight-line path options, offering flexibility and high accuracy in selections. With background processing and real-time updates, the tool maintained a smooth, responsive user experience. The project highlighted advanced algorithm design, data structure optimization, and real-time system performance.</p>
+                </div>
+                <div class="project">
+                    <h3>Cloudvirga Dashboard Design</h3>
+                    <div class="project-images">
+                        <img src="cloudvirga1.jpg" alt="Cloudvirga Design 1">
+                        <img src="cloudvirga2.jpg" alt="Cloudvirga Design 2">
+                        <img src="cloudvirga3.jpg" alt="Cloudvirga Design 3">
+                    </div>
+                    <p>Last summer, I interned as a UX designer at Cloudvirga, a fintech startup focused on simplifying the home loan and credit card application processes. One of my key projects involved collaborating with the design team to redesign Cloudvirga’s platform, aligning it with the company’s updated branding, values, and mission. A primary goal of the redesign was to encourage users to complete their home loan applications. I played an integral role in every stage of the design process, from participating in regular design reviews to revising Figma files to improve the user interface. I also ensured the site met ADA compliance standards, creating a more inclusive experience for all users.</p>
+                </div>
+                <div class="project">
+                    <h3>Spotify Case Study</h3>
+                    <p>Created a new feature for Spotify by using the Double Diamond Framework in order to build a design to promote community building with a clear user interface using Figma. Participated in a critique group to peer review student products and provide feedback.</p>
+                    <a href="https://github.com/yourusername/spotify-case-study" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Connect-N</h3>
+                    <video controls>
+                        <source src="connect-n.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Collaborated with a partner to develop a dynamic version of Connect 4 with any number of rows and columns. Gained experience with using both 1-dimensional and 2-dimensional data, structuring code with inheritance and subclasses, and writing code for simple artificial intelligence.</p>
+                    <a href="https://github.com/yourusername/connect-n" target="_blank">View on GitHub</a>
+                </div>
             </div>
         </section>
 
-    
+        <section id="contact" class="tab-content" style="display:none;" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, please email me at <a href="mailto:cpb93@cornell.edu">cpb93@cornell.edu</a>.</p>
+        </section>
     </main>
 
     <footer>
-        <p>© 2024 Courtney Brecher </p>
+        <p>© 2024 Courtney Brecher</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
