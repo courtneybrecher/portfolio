@@ -14,11 +14,12 @@ body {
 }
 
 img {
-    width: 40%; /* Resize image to fit the container */
+    width: 30%; /* Resize image to fit the container */
     height: auto; /* Maintain the aspect ratio */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
     border: 2px solid #ccc; /* Add a border */
+    float: left;
 }
 
 header {
