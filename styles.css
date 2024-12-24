@@ -2,9 +2,10 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Lato', sans-serif; /* Use a clean, professional font */
-    background: #F0F0F5; /* Muted purple background */
-    color: #333;
+    font-family: 'Georgia', serif; /* Use a Times New Roman-like font */
+    font-size: 18px; /* Increase font size */
+    background: #2C2C34; /* Darker background */
+    color: #E8E8E8; /* Light text color */
 }
 
 /* Create a flex container for the body */
@@ -14,16 +15,16 @@ body {
 }
 
 header {
-    background-color: #6A5ACD; /* Slightly darker purple background */
-    color: #fff;
+    background-color: #1A1A1D; /* Dark header background */
+    color: #E8E8E8;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: 700;
 }
 
@@ -41,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #E8E8E8;
     text-decoration: none;
     font-size: 1.2em;
     padding: 10px 20px;
@@ -49,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #483D8B; /* Darker hover effect */
+    background-color: #4E4E50; /* Darker hover effect */
     border-radius: 5px;
 }
 
@@ -58,10 +59,10 @@ main {
     flex: 1;
     padding: 20px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #3D3D42; /* Darker background for main content */
     border-radius: 8px;
     max-width: 1200px; /* Increased max-width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-container {
@@ -84,9 +85,9 @@ main {
 }
 
 .project {
-    background-color: #fff;
+    background-color: #4E4E50; /* Darker project background */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     flex: 1;
     min-width: 300px; /* Minimum width to ensure responsiveness */
@@ -96,9 +97,9 @@ main {
     margin-top: 0;
 }
 
-.project video,
-.project img {
+.project-media {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -106,18 +107,21 @@ main {
 .project-images {
     display: flex;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .project-images img {
     flex: 1;
+    height: 100px; /* Adjust height to make images smaller */
+    object-fit: cover;
     border-radius: 8px;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #6A5ACD; /* Slightly darker purple background */
-    color: #fff;
+    background-color: #1A1A1D; /* Dark footer background */
+    color: #E8E8E8;
 }
 
 /* Hide all tab content by default */
