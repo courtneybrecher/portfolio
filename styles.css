@@ -5,7 +5,7 @@ html, body {
     font-family: 'Open Sans', sans-serif; /* Use a simplistic font like Open Sans */
     background: #E8E8F8; /* Muted purple background */
     color: #333;
-    font-size: 1.5em;
+    font-size: .75em;
 }
 
 /* Create a flex container for the body */
@@ -21,6 +21,7 @@ img {
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
     border: 2px solid #ccc; /* Add a border */
     float: left;
+    padding: 20px;
 }
 
 header {
