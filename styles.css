@@ -101,6 +101,13 @@ main {
     border-radius: 8px;
 }
 
+.project-cloud {
+    width: 100px;
+    height: 80px; 
+    height: auto;
+    border-radius: 8px;
+}
+
 .project-images {
     display: flex;
     flex-direction: column;
