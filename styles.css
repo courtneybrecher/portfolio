@@ -94,32 +94,22 @@ main {
     gap: 20px;
 }
 
-.project-media {
-    width: 250px;
-    height: 100px; 
-    height: auto;
-    border-radius: 8px;
-}
-
 .project-cloud {
-    width: 100px;
-    height: 80px; 
-    height: auto;
-    border-radius: 8px;
-}
-
-.project-images {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 150px;
-    height: 100px; 
 }
 
-.project-images img {
-    width: 300px;
-    height: 100px; /* Adjust height to make images smaller */
+.project-cloud img {
+    width: 150px; /* Adjust width to make images smaller */
+    height: auto;
     object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-media {
+    width: 300px;
+    height: auto;
     border-radius: 8px;
 }
 
